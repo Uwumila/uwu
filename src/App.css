@@ -1,0 +1,14 @@
+body {
+  background-image: url('assets/images/v223_7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.background .card,
+.background .navbar,
+.background .footer,
+.background .card-body {
+  background-color: rgba(255, 255, 255, 0.8);
+}

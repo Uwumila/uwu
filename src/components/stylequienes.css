@@ -1,0 +1,93 @@
+body {
+    background-image: url('assets/images/v223_7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  p{
+    font-family: cursive;
+  }
+  h1{
+    font-family: cursive;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .text-container {
+    flex: 1; /* Take up remaining space */
+    max-width: 50%; /* Ensure it doesn't take more than half of the screen */
+    background-color: rgba(243, 235, 235, 0.8)
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align cards to the right */
+    max-width: 50%; /* Ensure it doesn't take more than half of the screen */
+    
+  }
+  
+  .card {
+    margin: px;
+    flex: 1 1 45%; /* Two cards per row */
+    max-width: 200px;
+    align-items: center
+
+  }
+  
+  .card-img-top {
+    width: auto ;
+    max-width: 200px; /* Ensure the image fits within the card width */
+    height: 300px; /* Maintain aspect ratio */
+    max-height: 100%; /* Adjust the maximum height as needed */
+    object-fit: cover; /* Ensure the image covers the given dimensions */
+    border: none;
+
+  }
+  .card-title {
+    text-align: center;
+  }
+
+
+  #titulo {
+    text-align: center;
+  }
+  .lead {
+    margin-right: 10px;
+    text-align: justify;
+  }
+  .lineas {
+    text-align: center; 
+  }
+  .frase {
+    text-align: center;
+  }
+
+  
+  @media (max-width: 765px) {
+    .main-container {
+      flex-direction: column; /* Stack columns vertically on small screens */
+      align-items: center; /* Center items */
+      background-color: rgba(243, 235, 235, 0.8);
+    }
+    .text-container, .cards-container {
+      max-width: 100%; /* Take full width on small screens */
+      background-color: rgba(243, 235, 235, 0.8);
+    }
+    .card {
+      flex: 1 1 100%; /* Stack cards vertically on small screens */
+      background-color: rgba(243, 235, 235, 0.8);
+      
+    }
+  }
+  .custom-buttom {
+    border: 2px solid #5a99dc;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
